@@ -40,8 +40,8 @@ super(frameText);
 
 int tempX=TOPX, y=TOPY;
 displayLabel.setBounds(tempX,y,240,HEIGHT);
-displayLabel.setBackground(Color.VIOLET);
-displayLabel.setForeground(Color.BLUE);
+displayLabel.setBackground(Color.WHITE);
+displayLabel.setForeground(Color.RED);
 add(displayLabel);
 
 memLabel.setBounds(TOPX,  TOPY+HEIGHT+ V_SPACE,WIDTH, HEIGHT);
@@ -62,7 +62,7 @@ tempX=TOPX+1*(WIDTH+H_SPACE); y=TOPY+1*(HEIGHT+V_SPACE);
 for(int i=0;i<specialButton.length;i++)
 {
 specialButton[i]=new MySpecialButton(tempX,y,WIDTH*2,HEIGHT,specialButtonText[i], this);
-specialButton[i].setForeground(Color.PURPLE);
+specialButton[i].setForeground(Color.BLUE);
 tempX=tempX+2*WIDTH+H_SPACE;
 }
 
